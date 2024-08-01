@@ -1,12 +1,11 @@
 // src/App.tsx
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Main from "./components/Main";
 import SideBar from "./components/SideBar";
 import Footer from "./components/Footer";
 import { useApiData } from "./hooks/useApiData";
 import DateForm from "./components/DateForm";
-import { ApiData } from "./types/apiData";
 
 const App: React.FC = () => {
   const [date, setDate] = useState<string>(
